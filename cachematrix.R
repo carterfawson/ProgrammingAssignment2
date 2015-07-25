@@ -16,7 +16,8 @@ fin <<- NULL
 }
 
 
-## I might say that the elipsis isn't required for this function, but that is absed on my limited knowledge of matrix math. I just don't think that the solve function will accept more than one argument because you don't need more than a single matrix. That said I will leave it in there for the sake of the assignment
+## This function is what will either calculate the inverse of the matrix or pull it from the cached object. It just uses the get, set functions returned from the function above to do one or the other. It's pretty simple stuff.
+## The elipsis in the arguments to the function is if there are any other arguments you would like to add into the solve function. I didn't have it originally in my code but I added after seeing that they had it in the definition of the function.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
